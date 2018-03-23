@@ -1,0 +1,50 @@
+﻿<Window x:Class="BookMe.ServicePersonal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookMe"
+        xmlns:views="clr-namespace:BookMe.UserControls"
+        mc:Ignorable="d"
+        Title="BookMe | ServicePersonal"
+        Height="700"
+        Width="900"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None">
+  <Grid x:Name="MyGrid">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="151*" />
+      <ColumnDefinition Width="441*" />
+    </Grid.ColumnDefinitions>
+    <Rectangle Fill="#00ab84" />
+    <Button x:Name="LogOutBtn"
+            Margin="0,408,0,244"
+            Content="Log Out"
+            Foreground="#eb5d45"
+            Click="LogOutBtn_Click" />
+    <Button Content="X"
+            Foreground="#eb5d45"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Width="95"
+            Grid.Column="1"
+            Margin="551,10,0,0"
+            Height="19"
+            Click="Button_Click" />
+    <Button x:Name="ListServiceBtn"
+            Margin="0,207,0,443"
+            Content="My Services"
+            Click="ListServiceBtn_Click" />
+    <Button x:Name="AddServiceBtn"
+            Margin="0,140,0,515"
+            Content="Add new Service"
+            Click="AddServiceBtn_Click" />
+    <Button x:Name="SettingsBtn"
+            Margin="0,170,0,478"
+            Content="Settings"
+            Click="SettingsBtn_Click" />
+    <Image Margin="10,614,10,10"
+           Source="lamk_tunnus_pysty_nega.png"
+           Stretch="Fill" />
+  </Grid>
+</Window>

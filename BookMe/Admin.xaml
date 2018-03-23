@@ -1,0 +1,52 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookMe"
+        xmlns:UserControls="clr-namespace:BookMe.UserControls"
+        x:Class="BookMe.Admin"
+        mc:Ignorable="d"
+        Title="BookMe | Admin"
+        Height="700"
+        Width="900"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None">
+  <Grid x:Name="MyGrid">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="151*" />
+      <ColumnDefinition Width="441*" />
+    </Grid.ColumnDefinitions>
+    <Rectangle Fill="#00ab84" />
+    <Button x:Name="LogOutBtn"
+            Margin="0,408,0,244"
+            Content="Log Out"
+            Click="LogOutBtn_Click"
+            Foreground="#eb5d45" />
+    <Button x:Name="LocationsBtn"
+            Margin="0,207,0,443"
+            Content="Locations"
+            Click="LocationsBtn_Click" />
+    <Button x:Name="SettingsBtn"
+            Margin="0,170,0,478"
+            Content="Settings"
+            Click="SettingsBtn_Click" />
+    <Button x:Name="UsersBtn"
+            Margin="0,140,0,515"
+            Content="Users"
+            Click="UsersBtn_Click" />
+    <UserControls:AdminUsersView x:Name="AdminUsersView"
+                                 Grid.Column="1" />
+    <Button Content="X"
+            Foreground="#eb5d45"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Width="95"
+            Grid.Column="1"
+            Margin="551,10,0,0"
+            Click="Button_Click"
+            Height="19" />
+    <Image Margin="10,614,10,10"
+           Source="lamk_tunnus_pysty_nega.png"
+           Stretch="Fill" />
+  </Grid>
+</Window>
